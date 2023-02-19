@@ -17,7 +17,7 @@ const PieChart = () => {
     useEffect(() => {
     // fetch data from API
     const fetchData = async () => {
-      const response = await fetch('http://localhost:3006/items');
+      const response = await fetch('https://jolly-top-hat-duck.cyclic.app/items');
       const data = await response.json();
         console.log(data);
       // transform data to match chart format
